@@ -11,3 +11,14 @@ img {
     height: 80px;
     object-fit: cover;
 }
+
+@media (max-width:768px) {
+    :host {
+        align-items: flex-start;
+    }
+
+
+    img {
+        display: none;
+    }
+}
