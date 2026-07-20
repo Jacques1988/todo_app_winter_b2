@@ -1,0 +1,14 @@
+.section-teaser {
+    font-size: 3rem;
+    font-family: 'Helvetica';
+    color: #0369B0;
+}
+
+
+
+
+@media (max-width:768px) {
+    .section-teaser {
+        font-size: 2rem;
+    }
+}
