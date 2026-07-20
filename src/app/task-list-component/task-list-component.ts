@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Teaser } from '../components/teaser/teaser';
+import { Teaser } from '../shared/components/teaser/teaser';
 import { Task } from './task/task';
 
 @Component({
