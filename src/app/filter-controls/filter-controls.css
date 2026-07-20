@@ -5,10 +5,15 @@
     margin-top: 3rem;
 }
 
-
 .button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.section-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }

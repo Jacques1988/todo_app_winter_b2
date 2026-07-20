@@ -1,10 +1,8 @@
 :host {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 3rem;
 }
 
 
@@ -16,19 +14,18 @@
 }
 
 
-img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
+.task-list-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
 }
 
+
+
 @media (max-width:768px) {
-    :host {
+    .section-container {
         align-items: flex-start;
-    }
-
-
-    img {
-        display: none;
     }
 }
