@@ -1,17 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-.section-teaser {
-    font-size: 3rem;
-    font-family: 'Helvetica';
-    color: #0369B0;
+.section-container {
+    width: 100%;
+    max-width: 1550px;
 }
 
 
 
+@media (max-width:1250px) {
+    .section-container {
+        max-width: 900px;
+    }
+}
 
-@media (max-width:768px) {
-    .section-teaser {
-        font-size: 2rem;
+
+@media (max-width:900px) {
+    .section-container {
+        max-width: 500px;
     }
 }
