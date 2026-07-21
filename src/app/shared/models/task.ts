@@ -1,5 +1,6 @@
 export interface Task {
   id: number;
-  task: string;
+  name: string;
   status: string;
+  checked: boolean;
 }

@@ -1,11 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Teaser } from '../shared/components/teaser/teaser';
-import { Task } from './task/task';
+import { TaskComponent } from './task/task';
+import { TaskService } from '../services/task-service';
 
 @Component({
   selector: 'app-task-list-component',
-  imports: [Teaser, Task],
+  imports: [Teaser, TaskComponent],
   templateUrl: './task-list-component.html',
   styleUrl: './task-list-component.css',
 })
-export class TaskListComponent {}
+export class TaskListComponent {
+  taskService = inject(TaskService);
+  tasklist = this.taskService.getAllTasks();
+
+  /* taskList = inject(TaskService).getAllTasks(); */
+}

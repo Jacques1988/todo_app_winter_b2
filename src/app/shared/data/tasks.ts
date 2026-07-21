@@ -1,17 +1,20 @@
 export let tasks = [
   {
     id: 1,
-    tasks: 'Blumen gießen',
+    name: 'Blumen gießen',
     status: 'incomplete',
+    checked: true,
   },
   {
     id: 2,
-    tasks: 'Dackel füttern',
+    name: 'Dackel füttern',
     status: 'incomplete',
+    checked: false,
   },
   {
     id: 3,
-    tasks: 'Einkaufen',
+    name: 'Einkaufen',
     status: 'incomplete',
+    checked: true,
   },
 ];

@@ -2,6 +2,10 @@
   <app-teaser [text]="'Task List'"></app-teaser>
 
   <ul class="task-list-container">
-    <app-task></app-task>
+    @if (tasklist().length > 0) {
+      @for (task of tasklist(); track task.id) {
+        <app-task [task]="task"></app-task>
+      }
+    }
   </ul>
 </div>
