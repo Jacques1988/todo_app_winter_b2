@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Teaser } from '../components/teaser/teaser';
-import { Button } from '../components/button/button';
+import { Teaser } from '../shared/components/teaser/teaser';
+import { Button } from '../shared/components/button/button';
 
 @Component({
   selector: 'app-filter-controls',
