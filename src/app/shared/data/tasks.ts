@@ -3,7 +3,7 @@ export let tasks = [
     id: 1,
     name: 'Blumen gießen',
     status: 'incomplete',
-    checked: true,
+    checked: false,
   },
   {
     id: 2,
@@ -15,6 +15,6 @@ export let tasks = [
     id: 3,
     name: 'Einkaufen',
     status: 'incomplete',
-    checked: true,
+    checked: false,
   },
 ];
