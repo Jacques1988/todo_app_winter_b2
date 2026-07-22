@@ -2,10 +2,11 @@
   <app-teaser [text]="'Add a new task'"></app-teaser>
   <div class="input-container">
     <input
+      #newTaskInput
       class="add-new-task-input"
       type="text"
       placeholder="Add a new task"
     />
-    <app-button [text]="'Add'"></app-button>
+    <app-button [text]="'Add'" (click)="addNewTask()"></app-button>
   </div>
 </div>
