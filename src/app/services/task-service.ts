@@ -23,4 +23,13 @@ export class TaskService {
 
     this.taskList.push(newTaskObject);
   }
+
+  updateTask(todo: Task) {
+    this.taskList.map((task) => {
+      if (task.id === todo.id) {
+        return todo;
+      }
+      return task;
+    });
+  }
 }
